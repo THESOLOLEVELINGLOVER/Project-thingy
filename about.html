@@ -85,25 +85,47 @@
 
         /* Image styling */
         .racket-img {
+            display: block;
             width: 60%;
             max-width: 280px;
             border-radius: 12px;
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
-            margin-bottom: 2rem;
+            margin: 0 auto 2rem auto;
+        }
+
+        /* Responsive YouTube video wrapper */
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            margin: 0 auto 2rem auto;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
         }
 
         /* Button styling */
         .button-group {
             display: flex;
             justify-content: center;
-            gap: 15px;
+            gap: 12px;
             flex-wrap: wrap;
         }
 
         .btn {
+            display: inline-block;
             text-decoration: none;
             background-color: #3498db;
-            color: white;
+            color: #ffffff;
             padding: 12px 24px;
             border-radius: 8px;
             font-weight: bold;
@@ -135,35 +157,16 @@
 
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA98b3srIsHrzMqRkuntIxA4xmzMZlBJSVeceBQo-a1g&s=10" alt="This is the racket I use for badminton" class="racket-img">
 
+        <h2>Featured Video</h2>
+        <div class="video-wrapper">
+            <iframe width="850" height="478" src="https://www.youtube.com/embed/cJdjdJYZhnY" title="Doing a boss fight in Wuthering Waves" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
         <div class="button-group">
-  <a href="https://www.youtube.com/@exoled202" target="_blank" rel="noopener noreferrer" class="btn">My YouTube Channel</a>
-  <a href="https://lifesavingsociety.com" target="_blank" rel="noopener noreferrer" class="btn">My Lifesaving Course</a>
-</div>
-
-<style>
-  .button-group {
-    display: flex;
-    gap: 12px;
-    flex-wrap: wrap;
-  }
-
-  .btn {
-    display: inline-block;
-    padding: 12px 24px;
-    background-color: #0056b3;
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 6px;
-    font-family: sans-serif;
-    font-weight: bold;
-    transition: background-color 0.2s;
-  }
-
-  .btn:hover {
-    background-color: #003d82;
-  }
-</style>
-
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="btn">My YouTube Channel</a>
+            <a href="https://lifesavingsociety.com" target="_blank" rel="noopener noreferrer" class="btn">My Lifesaving Course</a>
+        </div>
+    </div>
 
 </body>
 </html>
