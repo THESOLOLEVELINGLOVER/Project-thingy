@@ -1,20 +1,169 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        /* Clean, centered layout */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 2rem 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .container {
+            background: white;
+            padding: 3rem 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 90%;
+        }
+
+        h1 {
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+            font-size: 2.5rem;
+            color: #2c3e50;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            color: #2c3e50;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #3498db;
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        mark {
+            background-color: #d6eaf8;
+            color: #2c3e50;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        /* Clean list styling inside a centered card */
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0 auto 2rem auto;
+            max-width: 400px;
+        }
+
+        li {
+            background-color: #f8f9fa;
+            margin: 8px 0;
+            padding: 10px 15px;
+            border-radius: 8px;
+            color: #444;
+            font-size: 1.05rem;
+            border-left: 4px solid #3498db;
+        }
+
+        /* Image styling */
+        .racket-img {
+            width: 60%;
+            max-width: 280px;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+            margin-bottom: 2rem;
+        }
+
+        /* Button styling */
+        .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            text-decoration: none;
+            background-color: #3498db;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+        }
+    </style>
 </head>
 <body>
 
-  <h1> About Me</h1>
-  <p> Know more about me</p>
-  <p> I am an <i>easy going</i>, <b>cooperative</b>, and <mark>an attentive person</mark> ready to listen to whatever you want to talk about!
-  <h2> Hobbies</h2>
-  <ul> <li> Swimming</li> <li> Playing badminton</li> <li> Taking apart electronics and fixing them</li> <li> Playing video games</li> <li> Watching anime</li>
-  </ul>
-  <img src="https://i.ibb.co/Q7pM9Drf/1000000429.jpg" alt= "This is the racket I use for badminton" width="50%">
-  
-	 <a href="https://www.youtube.com/@exoled202">Visit my Youtube channel!</a>
-  <a href="https://www.lifesavingsociety.com/">Visit the website explaining the course I am taking!</a>
+    <div class="container">
+        <h1>About Me</h1>
+        <p class="subtitle">Know more about me</p>
+        <p>I am an <i>easy going</i>, <b>cooperative</b>, and <mark>attentive person</mark> ready to listen to whatever you want to talk about!</p>
+
+        <h2>Hobbies</h2>
+        <ul>
+            <li>Swimming</li>
+            <li>Playing badminton</li>
+            <li>Taking apart electronics and fixing them</li>
+            <li>Playing video games</li>
+            <li>Watching anime</li>
+        </ul>
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA98b3srIsHrzMqRkuntIxA4xmzMZlBJSVeceBQo-a1g&s=10" alt="This is the racket I use for badminton" class="racket-img">
+
+        <div class="button-group">
+  <a href="https://www.youtube.com/@exoled202" target="_blank" rel="noopener noreferrer" class="btn">My YouTube Channel</a>
+  <a href="https://lifesavingsociety.com" target="_blank" rel="noopener noreferrer" class="btn">My Lifesaving Course</a>
+</div>
+
+<style>
+  .button-group {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #0056b3;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-family: sans-serif;
+    font-weight: bold;
+    transition: background-color 0.2s;
+  }
+
+  .btn:hover {
+    background-color: #003d82;
+  }
+</style>
+
 
 </body>
 </html>
