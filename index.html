@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>Welcome</title>
     <style>
-        /* Clean, centered layout */
+        /* Clean, centered layout matching your About Me page */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
@@ -22,7 +22,7 @@
 
         .container {
             background: white;
-            padding: 3rem 2rem;
+            padding: 3.5rem 2.5rem;
             border-radius: 15px;
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
             max-width: 600px;
@@ -32,19 +32,12 @@
         h1 {
             margin-top: 0;
             margin-bottom: 0.5rem;
-            font-size: 2.5rem;
+            font-size: 2.8rem;
             color: #2c3e50;
-        }
-
-        h2 {
-            font-size: 1.6rem;
-            color: #2c3e50;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
         }
 
         .subtitle {
-            font-size: 1.2rem;
+            font-size: 1.25rem;
             font-weight: 600;
             color: #3498db;
             margin-top: 0;
@@ -54,7 +47,7 @@
         p {
             font-size: 1.1rem;
             color: #666;
-            margin-bottom: 2rem;
+            margin-bottom: 2.2rem;
             line-height: 1.6;
         }
 
@@ -65,31 +58,16 @@
             border-radius: 4px;
         }
 
-        /* Clean list styling inside a centered card */
-        ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0 auto 2rem auto;
-            max-width: 400px;
-        }
-
-        li {
+        /* Subtle highlight box matching your list styling */
+        .welcome-banner {
             background-color: #f8f9fa;
-            margin: 8px 0;
-            padding: 10px 15px;
+            margin: 0 auto 2.2rem auto;
+            padding: 14px 18px;
             border-radius: 8px;
             color: #444;
-            font-size: 1.05rem;
+            font-size: 1rem;
             border-left: 4px solid #3498db;
-        }
-
-        /* Image styling */
-        .racket-img {
-            width: 60%;
-            max-width: 280px;
-            border-radius: 12px;
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
-            margin-bottom: 2rem;
+            max-width: 440px;
         }
 
         /* Button styling */
@@ -101,9 +79,10 @@
         }
 
         .btn {
+            display: inline-block;
             text-decoration: none;
             background-color: #3498db;
-            color: white;
+            color: #ffffff;
             padding: 12px 24px;
             border-radius: 8px;
             font-weight: bold;
@@ -115,55 +94,38 @@
             background-color: #2980b9;
             transform: translateY(-2px);
         }
+
+        /* Secondary button style for external links */
+        .btn-secondary {
+            background-color: #0056b3;
+        }
+
+        .btn-secondary:hover {
+            background-color: #003d82;
+        }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>About Me</h1>
-        <p class="subtitle">Know more about me</p>
-        <p>I am an <i>easy going</i>, <b>cooperative</b>, and <mark>attentive person</mark> ready to listen to whatever you want to talk about!</p>
+        <h1>Welcome!</h1>
+        <p class="subtitle">Thanks for stopping by my corner of the web</p>
+        
+        <p>Glad you're here! Feel free to explore to learn more about my <mark>hobbies, projects, and interests</mark>, or check out my links below.</p>
 
-        <h2>Hobbies</h2>
-        <ul>
-            <li>Swimming</li>
-            <li>Playing badminton</li>
-            <li>Taking apart electronics and fixing them</li>
-            <li>Playing video games</li>
-            <li>Watching anime</li>
-        </ul>
-
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA98b3srIsHrzMqRkuntIxA4xmzMZlBJSVeceBQo-a1g&s=10" alt="This is the racket I use for badminton" class="racket-img">
+        <div class="welcome-banner">
+            🏊 Swimming &nbsp;•&nbsp; 🏸 Badminton &nbsp;•&nbsp; 🔧 Tech Repair &nbsp;•&nbsp; 🎮 Gaming
+        </div>
 
         <div class="button-group">
-  <a href="https://www.youtube.com/@exoled202" target="_blank" rel="noopener noreferrer" class="btn">My YouTube Channel</a>
-  <a href="https://lifesavingsociety.com" target="_blank" rel="noopener noreferrer" class="btn">My Lifesaving Course</a>
-</div>
-
-<style>
-  .button-group {
-    display: flex;
-    gap: 12px;
-    flex-wrap: wrap;
-  }
-
-  .btn {
-    display: inline-block;
-    padding: 12px 24px;
-    background-color: #0056b3;
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 6px;
-    font-family: sans-serif;
-    font-weight: bold;
-    transition: background-color 0.2s;
-  }
-
-  .btn:hover {
-    background-color: #003d82;
-  }
-</style>
-
+            <!-- Links directly to your About Me page -->
+            <a href="about.html" class="btn">About Me</a>
+            <!-- Your existing external links -->
+            <a href="https://www.youtube.com/@exoled202" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">YouTube Channel</a>
+            <a href="https://lifesavingsociety.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Lifesaving Course</a>
+        </div>
+    </div>
 
 </body>
 </html>
+
