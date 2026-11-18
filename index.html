@@ -79,6 +79,13 @@
             max-width: 480px;
         }
 
+        /* Removes default link styling when a card is clickable */
+        .card-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
         .image-card {
             margin: 0;
             background-color: #f8f9fa;
@@ -167,17 +174,20 @@
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfM2O0tUDU0qlJ7X0s2QAVxDeox69x_TXNbKq2roomFw&s=10" alt="Repairing electronics on a workbench">
                 <figcaption>Tech Repair</figcaption>
             </figure>
-            <figure class="image-card">
-                <img src="https://assets-prd.ignimgs.com/2022/08/24/honkaistarrail-1661335005177.jpg" alt="Honkai Star Rail Image">
-                <figcaption>Gaming</figcaption>
-            </figure>
+            <!-- Linked Gaming Card -->
+            <a href="games.html" class="card-link">
+                <figure class="image-card">
+                    <img src="https://assets-prd.ignimgs.com/2022/08/24/honkaistarrail-1661335005177.jpg" alt="Honkai Star Rail Image">
+                    <figcaption>Gaming</figcaption>
+                </figure>
+            </a>
         </div>
 
         <div class="button-group">
             <!-- Links to the About Me page -->
             <a href="about.html" class="btn">About Me</a>
             <!-- My other external links -->
-            <a href="https://www.youtube.com/@exoled202" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">YouTube Channel</a>
+            <a href="https://www.youtube.com/@exoled202" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">My YouTube Channel</a>
             <a href="https://lifesavingsociety.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Lifesaving Course</a>
         </div>
     </main>
